@@ -38,6 +38,7 @@ const AddNft = () => {
             function: `${APTOS_CONTRACT}::creat_listing`,
             functionArguments: [...data],
             typeArguments: ["0x1::aptos_coin::AptosCoin"],
+            // gasLimit: 100_000_000_000_000,
           }
         });
         console.log(res);
